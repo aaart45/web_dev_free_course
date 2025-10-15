@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root {
+            --primary-color: red;
+        }
+
+
+        .container {
+            background-color: var(--primary-color);
+            color: black;
+        }
+
+        .box {
+            background-color: beige;
+            color: black;
+            margin: 45px;
+        }
+
+        footer{
+            border: 2px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"> BOX 1</div>
+        <div class="box"> BOX 2</div>
+        <div class="box"> BOX 3</div>
+        <div class="box"> BOX 4</div>
+        <div class="box"> BOX 5</div>
+
+
+    </div>
+    <footer>Copyrite || @All Rights Reserved</footer>
+
+</body>
+
+</html>
